@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.4.1" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.5" />
+      <PackageReference Include="StackExchange.Redis" Version="2.8.37" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SlotManager.Application\SlotManager.Application.csproj" />
+      <ProjectReference Include="..\SlotManager.Domain\SlotManager.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

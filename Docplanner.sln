@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.API", "SlotManager.API\SlotManager.API.csproj", "{E10766B3-3720-4BF3-A3CD-793C126F35B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF9B969E-FBD7-48B6-BDD2-281ABB8D86BB}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Application", "SlotManager.Application\SlotManager.Application.csproj", "{C8602A28-FA23-4132-ABA0-7C41C5CB7466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Infrastructure", "SlotManager.Infrastructure\SlotManager.Infrastructure.csproj", "{A34D660D-9C63-432F-84CF-F31C1938D632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Application.UnitTests", "SlotManager.Application.UnitTests\SlotManager.Application.UnitTests.csproj", "{1D4B2BF8-9265-43F1-B72D-184F2350A31F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Domain", "SlotManager.Domain\SlotManager.Domain.csproj", "{3FC53D77-CF41-4021-AE43-C7135FBB9AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Infrastructure.UnitTests", "SlotManager.Infrastructure.UnitTests\SlotManager.Infrastructure.UnitTests.csproj", "{6A4A535F-480D-4719-ABCB-E2D21EBBF78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.IntegrationTests", "SlotManager.IntegrationTests\SlotManager.IntegrationTests.csproj", "{3D1CFD15-A6C4-4313-A0BD-3CB67F6054DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.Domain.UnitTests", "SlotManager.Domain.UnitTests\SlotManager.Domain.UnitTests.csproj", "{ACA207B1-C6A3-4583-A81C-70C161CDCE5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.EventConsumers", "SlotManager.EventConsumers\SlotManager.EventConsumers.csproj", "{40D717C9-02E2-4968-9665-1E7B761CABF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlotManager.EventConsumers.UnitTests", "SlotManager.EventConsumers.UnitTests\SlotManager.EventConsumers.UnitTests.csproj", "{9B72EA9F-9B2C-408A-8A5C-09B7B18B4AEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E10766B3-3720-4BF3-A3CD-793C126F35B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10766B3-3720-4BF3-A3CD-793C126F35B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10766B3-3720-4BF3-A3CD-793C126F35B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10766B3-3720-4BF3-A3CD-793C126F35B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8602A28-FA23-4132-ABA0-7C41C5CB7466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8602A28-FA23-4132-ABA0-7C41C5CB7466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8602A28-FA23-4132-ABA0-7C41C5CB7466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8602A28-FA23-4132-ABA0-7C41C5CB7466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A34D660D-9C63-432F-84CF-F31C1938D632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34D660D-9C63-432F-84CF-F31C1938D632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34D660D-9C63-432F-84CF-F31C1938D632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34D660D-9C63-432F-84CF-F31C1938D632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4B2BF8-9265-43F1-B72D-184F2350A31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4B2BF8-9265-43F1-B72D-184F2350A31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4B2BF8-9265-43F1-B72D-184F2350A31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4B2BF8-9265-43F1-B72D-184F2350A31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC53D77-CF41-4021-AE43-C7135FBB9AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC53D77-CF41-4021-AE43-C7135FBB9AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC53D77-CF41-4021-AE43-C7135FBB9AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC53D77-CF41-4021-AE43-C7135FBB9AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4A535F-480D-4719-ABCB-E2D21EBBF78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4A535F-480D-4719-ABCB-E2D21EBBF78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4A535F-480D-4719-ABCB-E2D21EBBF78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4A535F-480D-4719-ABCB-E2D21EBBF78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1CFD15-A6C4-4313-A0BD-3CB67F6054DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1CFD15-A6C4-4313-A0BD-3CB67F6054DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1CFD15-A6C4-4313-A0BD-3CB67F6054DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1CFD15-A6C4-4313-A0BD-3CB67F6054DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA207B1-C6A3-4583-A81C-70C161CDCE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA207B1-C6A3-4583-A81C-70C161CDCE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA207B1-C6A3-4583-A81C-70C161CDCE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA207B1-C6A3-4583-A81C-70C161CDCE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D717C9-02E2-4968-9665-1E7B761CABF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D717C9-02E2-4968-9665-1E7B761CABF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D717C9-02E2-4968-9665-1E7B761CABF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D717C9-02E2-4968-9665-1E7B761CABF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B72EA9F-9B2C-408A-8A5C-09B7B18B4AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B72EA9F-9B2C-408A-8A5C-09B7B18B4AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B72EA9F-9B2C-408A-8A5C-09B7B18B4AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B72EA9F-9B2C-408A-8A5C-09B7B18B4AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

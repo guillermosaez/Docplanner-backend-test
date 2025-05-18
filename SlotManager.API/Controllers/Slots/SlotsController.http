@@ -1,0 +1,22 @@
+@SlotsControllerAddress={{SlotManagerBaseUrl}}/slots
+
+GET {{SlotsControllerAddress}}/availability/20250519
+Accept: application/json
+
+###
+
+POST {{SlotsControllerAddress}}/take
+Content-Type: application/json
+
+{
+  "Start": "2025-05-19T11:00:00",
+  "End": "2025-05-19T11:10:00",
+  "Comments": "My arm hurts a lot",
+  "Patient": {
+    "Name": "Mario",
+    "SecondName": "Neta",
+    "Email": "mario.neta@example.com",
+    "Phone": "555 44 33 22"
+  },
+  "FacilityId": "7960f43f-67dc-4bc5-a52b-9a3494306749"
+}

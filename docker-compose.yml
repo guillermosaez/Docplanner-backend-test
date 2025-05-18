@@ -1,0 +1,45 @@
+﻿services:
+  slotmanager:
+    image: slotmanager
+    build:
+      context: .
+      dockerfile: SlotManager.API/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80 #https is not configured for simplicity. If necessary, refer to https://learn.microsoft.com/en-us/aspnet/core/security/docker-compose-https?view=aspnetcore-8.0
+    ports:
+      - 5292:80
+    networks:
+      - backend
+  redis:
+    image: redis/redis-stack:latest
+    ports:
+      - 6379:6379 #Redis server
+      - 9999:8001 #Redis insight client
+    environment:
+      - REDIS_PASSWORD=my-password #When deploying in production environments, this credentials should be stored in a secure place, such as a KeyVault.
+      - REDIS_PORT=6379
+    networks:
+      - backend
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+      
+  rabbitmq:
+    image: rabbitmq:latest
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "5672:5672"
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
+
+networks:
+  backend:
+    driver: bridge
