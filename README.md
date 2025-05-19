@@ -1,5 +1,7 @@
 # Slot manager (.NET Backend test)
 
+![](https://github.com/guillermosaez/Docplanner-backend-test/actions/workflows/dotnet.yml/badge.svg)
+
 ## Start the project
 
 1. Clone the repository.
